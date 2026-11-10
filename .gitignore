@@ -1,0 +1,20 @@
+/target
+rust_port/target/
+fuzz/target/
+fuzz/corpus/
+fuzz/artifacts/
+
+*.so
+*.dylib
+*.dll
+*.a
+*.o
+*.obj
+test_rax
+compile_commands.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,13 @@
+[package]
+name = "safe-radix-kv"
+version = "0.1.0"
+edition = "2021"
+authors = ["mjlelis <mjlelis@users.noreply.github.com>"]
+description = "Safe Rust port and formal verification of the Redis Rax radix tree"
+
+[dependencies]
+thiserror = "1.0"
+
+[dev-dependencies]
+quickcheck = "1.0"
+quickcheck_macros = "1.0"

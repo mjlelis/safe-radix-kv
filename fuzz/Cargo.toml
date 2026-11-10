@@ -1,0 +1,19 @@
+[package]
+name = "safe-radix-kv-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+arbitrary = { version = "1.3", features = ["derive"] }
+safe-radix-kv = { path = "../rust_port" }
+
+[[bin]]
+name = "diff_c_vs_rust"
+path = "fuzz_targets/diff_c_vs_rust.rs"
+test = false
+doc = false
